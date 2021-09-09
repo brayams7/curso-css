@@ -1,0 +1,43 @@
+
+body{
+    background-color: black;
+}
+/*
+    herencia es la capacidad que tienen algunos elementos de heredar algunas propiedades 
+    de sus elementos contenedores (padres, abuelos, etc).
+*/
+/*hay algunas herencias que se agregan por defecto, ej:
+    la etiqueta span hereda el color y el tipo de fuente de su contenedor
+*/
+.title{
+    background-color: darkorange;
+    font-size: small;
+    color: darkred;
+}
+
+/*los enlaces no heredan de su contendedor*/
+
+.text{
+    color: darkseagreen;
+}
+
+/*
+    para heredar cualquier propiedad que por defecto no se herede se utiliza INHERIT
+*/
+
+.text a{
+    color: inherit;
+}
+
+/*
+    para eliminar una herencia que viene por defecto, 
+    se utiliza initial (vuelve al estado inicial, sin estilos heredaddos).
+*/
+
+.list{
+    color: khaki;
+}
+.list .item-extra{
+    color: initial;
+    color: white;
+}

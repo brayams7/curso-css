@@ -1,0 +1,67 @@
+/*selectores*/
+
+
+/*
+    selectores de atributo
+    id -> id del elemento
+    clase -> clase del elemento
+    otros atributos:
+        [atributo (href, value, name)]
+        [atributo=valor]
+        [atributo^=valor] -> valor de altributo que EMPIEZA con valor
+        [atributo*=valor] -> el valor del atributo ESTÉ EN CUALQUIER LUGAR
+*/
+
+/*
+    selectores agrupados
+        clase, clase, n
+    selectores descendientes:
+        selecciona a todos los elementos que estén adentro de la etiqueta
+        que asignamos.
+        .class h2
+
+        etiqueta separada por un espacio
+*/
+h1{
+    background-color: brown;
+}
+
+.item{
+    background-color: darkturquoise;
+}
+
+#titulo{
+    background-color: cadetblue;
+}
+/*selectores de tipo atributo*/
+[href]{
+    background-color: cornflowerblue;
+}
+/*selectores de atributo + valor*/
+
+[href="www.facebook.com"]{
+    background-color: darkkhaki;
+}
+
+[href^="red-social"]{
+    background-color: deeppink;
+}
+
+[name*="input"]{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 249, 249);
+    font-style: italic;
+}
+.text, .text-2, .text-3, .text-4{
+    background-color: coral;
+}
+
+.div-container li{
+    background-color: darkorange;
+}

@@ -1,0 +1,39 @@
+/*
+    como funciona css?:
+    Especificidad -> trata el valor mas alto en la etiquta
+        y ese será renderizado
+
+        El cálculo que realiza:
+            Etiquetas y pseudoelementos: 001
+            clases, atributos y pseudoclases: 010
+            ids: 100
+            Estilos en líne: 1000
+            !important: GANA A TODO y estamos evadiendo la especificidad 
+*/
+
+
+h1#especificidad{
+    background-color: cadetblue;
+}
+h1{
+    background-color: blue;
+}
+.especificidad{
+    background-color: chartreuse;
+}
+#especificidad{
+    background-color: cyan;
+}
+h1.especificidad{
+    background-color: burlywood;
+}
+
+
+/*
+h1.especificidad#especificidad{
+    background-color: darkmagenta;
+}*/
+
+h1.especificidad{
+    background-color: darkolivegreen !important;
+}
