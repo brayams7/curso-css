@@ -1,0 +1,61 @@
+/*
+    margin:
+        es la propiedad que no permite generar un espacio entre elementos adyacentes.
+        es un shorthand (propiedades abreviadas) que controla los 4 lados para dar margen
+
+        margin admite hasta 4 valoes que van en orden a la auja del reloj
+        4 valores -> margin: top rigth bottom left
+        3 valores -> margin: top left/rigth bottom
+        2 valores -> margin: top/bottom rigth/left
+        1 valor -> margin: 4 lados
+
+
+    padding:
+        es la propiedad que permite generar un espacio entre el borde y el contenido
+        4 valores -> padding: top rigth bottom left
+        3 valores -> padding: top left/rigth bottom
+        2 valores -> padding: top/bottom rigth/left
+        1 valor -> padding: 4 lados
+*/
+
+.block{
+    background-color: brown;
+    width: 30%;
+    margin: 10px;
+}
+
+/*los elemenos en linea solo tienen margenes horizontales*/
+.inline{
+    background-color: cadetblue;
+    width: 100px;
+    margin-left: 100px;
+}
+
+/*
+    malas practias
+
+    centrar un elemento con margin: 0 auto;
+    tambien agregarle a la etiqueta html: margin 0 y padding 0 -> son malas prácticas
+*/
+
+/*centrar un elemento*/
+
+.text{
+    width: 60%;
+    background-color: cornflowerblue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: inline-block;
+    background-color: crimson;
+    width: 32%;
+    text-align: center;
+    margin: 0px 3px 0px 3px ;
+}
+
+[class^="bloque"]{
+    color: white;
+}
