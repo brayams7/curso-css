@@ -1,0 +1,73 @@
+/*todo en css se compone de cajas o contenedores
+    caja:
+        -contenido
+        -padding
+        -borde
+        -margin
+        -width
+        -heigth
+
+*/
+
+/*
+    elementos en bloque:
+        estos elemenos se le puede asignar un tamaño de alto y ancho
+        -width
+        -heigth
+    elementos en linea:
+        el tamaño lo determina su contenido y no se le puede asignar tamaños
+
+*/
+
+/*
+    box sizing
+     es la propiedad que nos permite controlar el cálculo que hace el navegador a la hora
+     de modificar las propiedades content, padding y border.
+     
+     2 valores que podemos darle:
+        context-box -> valor por defecto
+        border-box -> cálculo de tamaño del elemento incluyendo el padding y el border.
+*/
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    padding:10px;
+}
+
+.container img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    background-color: brown;
+    text-align: center;
+    width: 50%;
+    margin-top: 5px;
+}
+
+.box-sizing{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+    background-color: blue;
+}
+
+.box-sizing h3{
+    margin: 0;
+    /*height: 100%;*/
+    text-align: center;
+    background-color: wheat;
+    
+}
+
+.div{
+    background-color: blueviolet;
+    height: 100px;
+    border-radius: -10px 100px;
+}
