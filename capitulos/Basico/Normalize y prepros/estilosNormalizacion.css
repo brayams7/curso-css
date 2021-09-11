@@ -1,0 +1,14 @@
+/*
+    prefijos propietarios:
+        son pefijos que se le deben asignar dependiendo el navegador que se utiliza,
+        ya que las propiedades que se le asigna en un navegador no
+*/
+body{
+    background-color: coral;
+}
+.example {
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
