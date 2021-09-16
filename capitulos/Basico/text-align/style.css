@@ -40,3 +40,9 @@ img{
     width: 45%;
     margin-right: 10px;
 }
+.container-img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
