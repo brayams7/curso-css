@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding-top:68px;
+}
+
+.header{
+    text-align: center;
+    padding: 25px 0;
+    background-color: burlywood;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
