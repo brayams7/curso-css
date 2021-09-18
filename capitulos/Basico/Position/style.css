@@ -49,4 +49,7 @@
         Con este tipo de posicionamiento los valores top, left, bottom y rigth no sirven para mover el
         elemento, si no para indicarle en qué punto pasará a tener un comportamiento fixed. hasta ese punto
         se comportará como si tuviera relative.
+    
+    z-index -> Es la propiedad que nos permite ordenar los elementos superpuestos para controlar  cual se coloca
+                por delante y cual por detrás.
 */
