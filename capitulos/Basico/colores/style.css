@@ -1,0 +1,17 @@
+/*como dibujar un triangulo en css*/
+
+/* RECONRDAR:
+    que existe el color TRANSPARENT
+*/
+.box{
+    border-left: 50px solid red;
+    border-top: 50px solid blue;
+    border-bottom: 50px solid yellowgreen;
+}
+
+.box-2{
+    box-sizing: border-box;
+    border-bottom: 500px solid rebeccapurple;
+    border-left: 650px solid transparent;
+    border-right: 650px solid transparent;
+}
