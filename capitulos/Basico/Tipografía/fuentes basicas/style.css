@@ -1,0 +1,12 @@
+/*
+Fuentes predeterminadas, son las fuentes que se consideran seguras ya que son genéricas y no establecen 
+  una familia tipográfica, si no un estilo de fuente.
+    serif: Fuentes que tienen serifas (adornos en los caracteres)
+    sans-serif: Fuentes sin serifas
+    monospace: Fuentes que tienen el mismo espaciado entre todos sus caracteres.
+    cursive: Fuentes que pretenden emular escritura a mano, con ligaduras y trazos fluidos
+    fantasy: Fuentes que suelen ser decorativas*/
+
+body{
+    font-family: sans-serif;
+}
