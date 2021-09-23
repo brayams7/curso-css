@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background-color: #F3F3F3;
+}
+
+.header{
+    width: 60%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__title{
+    font-size: 2.3rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.header__sub-title{
+    margin-top: 15px;
+}
+.header__text{
+    padding-top: 10px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #C6C6C6;
+}
+
+.container{
+    width: 80%;
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color:mediumaquamarine; */
+}
+.container__column{
+    display: inline-block;
+    width: 31.5%;
+    text-align: center;
+    margin: 0px 5px;
+    height: 100%;
+    position: relative;
+}
+
+.card{
+    box-shadow: 6px 6px 7px #C9C9C9;
+    border-radius: 15px;
+    height: 200px;
+    text-align: left;
+}
+.card-1, .card-4{    
+    position: absolute;
+    top: 130px;
+    
+}
+.card-1{
+    border-top: 5px solid #71D1AD;
+}
+.card-2{
+    position: absolute;
+    top: 0px;
+    border-top: 5px solid #DA4215;
+}
+
+.card-3{
+    border-top: 5px solid #E8C504;
+    position: absolute;
+    bottom: 0px;
+}
+.card-4{
+    border-top: 5px solid #279DE1;
+}
+.card__title{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.card__body{
+    padding-left: 15px;
+    color: #C6C6C6;
+}
+
+.card__footer{
+    text-align: right;
+    margin: auto;
+    width: 90%;
+}
