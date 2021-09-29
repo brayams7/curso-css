@@ -1,0 +1,69 @@
+/*
+    Alineacion del main axis:
+        justify-content:
+            flex-start | center | flex-end | space-between | space-around | space-evenly
+        
+        justify-content: 
+            define cómo el navegador distribuye el espacio entre y alrededor de los elementos flex, 
+                a lo largo del EJE PRINCIPAL de su contenedor.
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    margin: 0px auto;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.item{
+    margin: 10px;
+    border: 2px solid black;
+}
+.item__1{
+    
+}
+
+.item__1 p{
+    width: 400px;
+}
+
+img{
+    max-width: 50%;
+}
+
+.item__2{
+    width: 100%;
+    text-align: center;
+}
+
+.container-2{
+    background-color: burlywood;
+    text-align: center;
+    
+}
+
+.container-2__item--green{
+    width: auto;
+    margin-left: 50%;
+}
+
+.container-3{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-3 .item__1, .container-3 .item__2{
+    width: 40%;
+}
+
+

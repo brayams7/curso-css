@@ -1,0 +1,68 @@
+/*
+    Factor de crecimiento (hijos):
+        Flex-grow: <valor-numerico> (por defecto 0)
+            consiste en asignar el espacio sobrante según el valor que le demos a cada hijo: 
+                ej: item_1: 1, item__2: 2, item__3: 1 
+                    de todo el espacio sobrante al item 2 le corresponde un 50% y a los demas un 25%.
+            NOTA:
+                SI APLICO UN MARGEN NO LO TOMA COMO ESPACIO DISPONIBLE
+    
+    Factor de reduccion (hijos):
+        cuando la caja flex no tenga espacio sobrante, es la habilidad de encogerse, no se aceptan valores
+        negativos.
+        flex-shring:
+            valor por defecto 1 (se puede encoger cuando el viewport es pas pequeño que el tamaño inicial)
+
+*/
+ 
+*{
+    box-sizing: border-box;
+} 
+
+/* .container{
+    width: 800px;
+    margin: 0px auto;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.item{
+    width: 50%;
+    height: 125px;
+    margin: 0px 10px;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+
+.item:nth-child(2){
+    flex-grow: 2;
+}
+
+.item:nth-child(3){
+    width: 45%;
+} */
+
+.container__2{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.item__2{
+    border: 2px solid black;
+    height: 100px;
+    flex-shrink: 1;
+}
+
+.item__2:nth-child(3){
+    flex-shrink: 2;
+}
+
+

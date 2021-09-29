@@ -1,0 +1,109 @@
+/*
+    flex box:
+        - existe un contenedor flex (flex container)
+        - hijos (a los cuales se le aplica los las propiedades flex).
+        Dos ejes:
+            Eje principal (main axis):
+                
+
+            Eje transversal (cross axis):
+        
+            Nota:
+                Tambien el eje transversal puede ser el eje pricipal,
+                existe una propiedad que nos permite cambiarlo.  
+        
+        Al aplicar flex:
+            su contenedor se comporta como un elemento en bloque ya que ocupará todo el ancho disponible.
+            - la direccion por defecto es de forma horizontal.
+        
+        flex-direccion:
+            Manipulamos la direccion de los elementos y los valores son:
+                - Horizontal: 
+                    - row -> izquierda-derecha
+                    - row-reverse -> derecha-izquierda
+                -Vertical:
+                    - column -> arriba-abajo
+                    - column-reverse -> abajo-arriba
+        flex-wrap:
+            especifica si los elementos 
+            "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas dependiendo la
+            direccion.
+            nowrap -> permite que los hijos se mantengan en una sola linea.
+                    - si los hijos tienen un ancho mayor al de la caja, el ancho o alto de la caja hijo no lo
+                      tomará en cuenta.
+            wrap -> realiza un despligue de contenido en caso de que el ancho de los hijos no alcance en una linea,
+                    no significa que crea otra línea sino el contenido lo coloca debajo o la par dependiendo del
+                    flex-direction.
+            
+            Nota:
+                que flex direction es unidireccional (una sola fila o una sola columna).
+        
+        Flex-flow:
+            Es un shothand de flex-wrap y flex-direction:
+            <flex-direction>|<flex-wrap>
+
+            A ESTAS DOS PROPIEDADES DE LES CONOCE COMO FLUJO DE CAJA  (el comportamiento del contenedor).
+        
+        Alineacion del main axis:
+            flex-start | center | flex-end | space-between | space-around | space-evenly
+
+*/
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: cadetblue;
+    display: flex;
+    width: 700px;
+    margin: 0px auto;
+    height: 200px;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+.container-2{
+    background-color: cadetblue;
+    display: flex;
+    width: 700px;
+    margin: 0px auto;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.container-3{
+    background-color: rgb(19, 60, 61);
+    display: flex;
+    width: 700px;
+    height: 300px;
+    margin: 0px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.container-4{
+    background-color: rgb(19, 60, 61);
+    display: flex;
+    width: 700px;
+    height: 300px;
+    margin: 0px auto;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.item{
+    background-color: coral;
+    border: 2px solid black;
+}
+
+.container-3 .item{
+    background-color: coral;
+    border: 2px solid black;
+    width: 30%;
+}
+
+.container-4 .item{
+    background-color:goldenrod;
+    border: 2px solid black;
+    width: 100px;
+}

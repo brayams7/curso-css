@@ -1,0 +1,39 @@
+/*
+    Tamanio de los hijos (flex-basis):
+        Flex-basis: 
+            - Es el tamanio del elemento hijo dentro de la línea de la caja flexbox
+              si la caja flex tiene direccion x, flex-basis representa el width
+              si la caja flex tiene direccion y, flex-basis representa el heigth
+            Valor por defecto auto
+        
+
+*/
+ 
+*{
+    box-sizing: border-box;
+} 
+
+ .container{
+    width: 800px;
+    margin: 0px auto;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    height: 300px;
+}
+
+.item{
+    margin: 0px 10px;
+    flex-grow: 1;
+    border: 2px solid black;
+    flex-basis: 150px;
+    /* height: 150px; */
+}
+
+.item:nth-child(3){
+    flex-basis: 100%;
+}
+
+
