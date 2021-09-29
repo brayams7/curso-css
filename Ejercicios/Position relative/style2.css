@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: block;
+}
+
+body{
+    background-color: #F1F0EE;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.5rem;
+
+    /* max-height: 100vh; */
+    overflow: hidden;
+}
+.image{
+    position: absolute;
+    z-index: -1;
+}
+.image__top{
+    top:-100px;
+    left: -70px;
+}
+
+.image__bottom{
+    right: -200px;
+    bottom: -150px;
+}
+
+.container__left{
+    display: inline-block;
+    width: 350px;
+    margin-right: 300px;
+}
+.container__left__title{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #784F7D;
+}
+
+.container__left__text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    text-align:left ;
+    color: #A99FAD;
+} 
+.container__rigth{
+    display: inline-block;
+}
+
+.container__rigth__block{
+    position: relative;
+    padding: 1rem 15px;
+    margin-bottom: 10px;
+    background-color: #F8F7F9;
+    border-radius: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.7rem;
+    color: #A99FAD;
+}
+.container__rigth__block__starts{
+    display: inline-block;
+}
+.container__rigth__block__starts img{
+    margin: 0px 3px;
+}
+.container__rigth__block__text{
+    padding-left: 25px;
+}
+.container__rigth__block--1{
+    left: 0px;
+}
+.container__rigth__block--2{
+    left: 25px;
+}
+.container__rigth__block--3{
+    left: 50px;
+}
+
+main{
+    margin-top: 1.5rem;
+}
+
+.card{
+    display: inline-block;
+    width: 325px;
+    height: 150px;
+    padding: 20px;
+    background-color: #7A678C;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    color: #A99FAD;
+    vertical-align: top;
+    position: relative;
+    margin-right: 20px;
+}
+
+
+.user__profile{
+    display: inline-block;
+    width: 50px;
+    border-radius: 90%;
+}
+
+.user__info{
+    display: inline-block;
+    margin-left: 25px;
+    width: 60%;
+    position: relative;
+    top: -15px;
+}
+.user__info__name{
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.card-2{
+    top: 25px;
+}
+.card-3{
+    top: 50px;
+}
