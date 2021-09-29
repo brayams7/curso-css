@@ -1,0 +1,129 @@
+/*
+Colores
+  purple: hsl(263, 55%, 52%)
+  grey: hsl(217, 19%, 35%)
+  dark-blue: hsl(219, 29%, 14%)
+Fuente de la página
+  https://fonts.google.com/specimen/Barlow+Semi+Condensed
+  Estilos 500 y 600
+*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #333;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+}
+
+.container__grid{
+    position: relative;
+    width: 1050px;
+    margin: 1.5rem auto;
+    /*   */
+}
+
+.card{
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    height: 280px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.first{
+    position: relative;
+    width: 48%;
+    margin-right: 10px;
+}
+
+.second{
+    width: 24%;
+    margin-right: 10px;
+}
+
+.third{
+    width: 24%;
+    height: 571px;
+}
+
+.card__purple{
+    background-color: hsl(263, 55%, 52%);
+}
+.card__purple .card__quoutes{
+    position: absolute;
+    width: 13%;
+    top: 2.2rem;
+    right: 6.5rem;
+}
+
+.card__grey{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card__white{
+    background-color: whitesmoke;
+}
+
+.card__black{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.user{
+    vertical-align: middle;
+    color: #CDCDCD;
+    font-size: 0.8rem;
+}
+.user__image{
+    max-width: 35px;
+    border-radius: 50%;
+}
+
+.user__info{
+    display: inline-block;
+    margin-left: 25px;
+}
+.user__name{
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+.user__category{
+    margin: 0px;
+}
+.card__title{
+    /*este position relative es por el stating context entre la imgen de comillas y el texto*/
+    position: relative;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: whitesmoke;
+}
+.card__text{
+    color: #CDCDCD;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+.card__white .user__info,
+.card__white .card__text{
+    color: black;
+    opacity: 0.8;
+}
+
+.card__white .card__title{
+    color: black;
+}
+.fourth,
+.fifth{
+    position: absolute;
+    top: 292px;
+}
+.fourth{
+    width: 24%;
+    left:0;
+    
+}
+.fifth{
+    left: 263px;
+    width: 48%;
+}
