@@ -21,16 +21,16 @@ body{
 
 .header{
     width: 100%;
+    position: sticky;
+    top: 0;
 }
 
-.header img{
+img{
     max-width: 100%;
 }
 
 .container nav{
     background-color: darkcyan;
-    position: sticky;
-    top: 0;
 }
 
 .header ul{
